@@ -1,0 +1,9 @@
+# Address of timetrack server
+TIMETRACK_SERVER="http://tt.flatsoft.com"
+
+# Your auth token from http://tt.flatsoft.com/users/edit
+AUTH_TOKEN=""
+
+# You need to define DISPLAY as cron strips that
+# If this does not work for you type 'echo $DISPLAY'
+[ -z "$DISPLAY" ] && DISPLAY=:0
