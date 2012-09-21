@@ -60,7 +60,7 @@ check_command() {
 }
 
 check_growl() {
-  ps -ef | grep -v grep | grep Growll \
+  ps -ef | grep -v grep | grep -q Growl \
     || open -b com.Growl.GrowlHelperApp 2> /dev/null \
     || fail "Growl is not installed"
 }

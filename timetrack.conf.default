@@ -7,3 +7,6 @@ AUTH_TOKEN=""
 # You need to define DISPLAY as cron strips that
 # If this does not work for you type 'echo $DISPLAY'
 [ -z "$DISPLAY" ] && DISPLAY=:0
+
+NOTIFY_OPTIONS=""
+GROWL_OPTIONS="Yuppi!"
