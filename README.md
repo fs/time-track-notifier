@@ -26,7 +26,8 @@ Requires
 --------
 
 * curl is required to retrieve checkin status
-* notify-send is required to send notifies
+* notify-send is required to send notifies in Linux
+* growl and growlnotify is required to send notifies in Mac
 
 Copyright notices
 -----------------
