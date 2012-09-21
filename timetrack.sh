@@ -41,8 +41,11 @@ load_configs() {
 
 set_defaults() {
   [ -z "$PATH" ]    && PATH=/usr/bin:/bin
+  PATH=/usr/local/bin:$PATH
   [ -z "$MESSAGE" ] && MESSAGE="Please check in to timetrack"
-  [ -z "$ICON" ]    && ICON="$( dirname $( readlink -f $0 ) )/timetrack.png"
+  BASEPATH="$( dirname $( readlink -f $0 2> /dev/null ) 2> /dev/null )"
+  [ -z "$BASEPATH" ] && BASEPATH="$( dirname $0 )"
+  [ -z "$ICON" ]    && ICON="$BASEPATH/timetrack.png"
 }
 
 check_vars() {
