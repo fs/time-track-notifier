@@ -1,7 +1,7 @@
 Time-Track notifier
 -------------------
 
-This is a standalone tool to remind you to check-in to "time-track":https://github.com/fs/time-track-reborn
+This is a standalone tool to remind you to check-in to [time-track](https://github.com/fs/time-track-reborn)
 
 Installation
 ------------
